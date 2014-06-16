@@ -1,4 +1,4 @@
-require "minuteman/hash_operations"
+require "counterman/hash_operations"
 
 # Public: Counterman core classs
 #

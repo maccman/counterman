@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    counterman (1.0.3)
+    counterman (0.0.1)
       redis (~> 3.0.3)
 
 GEM

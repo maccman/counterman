@@ -1,12 +1,12 @@
 Gem::Specification.new do |s|
   s.name              = "counterman"
-  s.version           = "1.0.3"
-  s.summary           = "Bit Analytics"
-  s.description       = "Fast and furious tracking system using Redis bitwise operations"
-  s.authors           = ["elcuervo"]
-  s.licenses          = ["MIT", "HUGWARE"]
-  s.email             = ["yo@brunoaguirre.com"]
-  s.homepage          = "http://github.com/elcuervo/counterman"
+  s.version           = "0.0.1"
+  s.summary           = "Counter Analytics"
+  s.description       = "Fast and furious tracking system using Redis hash operations"
+  s.authors           = ["maccman"]
+  s.licenses          = ["MIT"]
+  s.email             = ["info@eribium.org"]
+  s.homepage          = "http://github.com/maccman/counterman"
   s.files             = `git ls-files`.split("\n")
   s.test_files        = `git ls-files test`.split("\n")
 
