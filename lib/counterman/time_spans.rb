@@ -1,0 +1,7 @@
+require "counterman/time_span"
+require "counterman/time_spans/year"
+require "counterman/time_spans/month"
+require "counterman/time_spans/week"
+require "counterman/time_spans/day"
+require "counterman/time_spans/hour"
+require "counterman/time_spans/minute"
