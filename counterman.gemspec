@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = "counterman"
-  s.version           = "0.0.2"
+  s.version           = "0.0.3"
   s.summary           = "Counter Analytics"
   s.description       = "Fast and furious tracking system using Redis hash operations"
   s.authors           = ["maccman"]
