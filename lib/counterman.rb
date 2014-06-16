@@ -31,22 +31,10 @@ class Counterman
   def initialize(options = {})
 
     self.options = default_options.merge!(options)
+    self.redis   = options[:redis] || Redis.new
 
     spans = self.options.fetch(:time_spans, %w[year month week day hour minute])
     @time_spans = generate_spans(spans)
-  end
-
-  # Public: Lazily Instantiate and memoize the Redis connection
-  #
-  def redis
-    @redis ||= case options[:redis]
-               when nil
-                 Redis.new
-               when Hash
-                 Redis.new options[:redis]
-               else
-                 options[:redis]
-               end
   end
 
 
