@@ -15,5 +15,13 @@ class Counterman
         end
       end.map(&:to_i)
     end
+
+    def all_counts
+      counts = redis.hgetall(key)
+      counts.inject({}) do |hash, (k,v)|
+        hash[k.to_i] = v.to_i
+        hash
+      end
+    end
   end
 end
