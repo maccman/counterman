@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.version           = "0.0.3"
   s.summary           = "Counter Analytics"
   s.description       = "Fast and furious tracking system using Redis hash operations"
-  s.authors           = ["maccman"]
+  s.authors           = ["maccman", "elcuervo"]
   s.licenses          = ["MIT"]
   s.email             = ["info@eribium.org"]
   s.homepage          = "http://github.com/maccman/counterman"
