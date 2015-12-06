@@ -8,6 +8,10 @@ class Counterman
       safe { redis.hget(key, id).to_i }
     end
 
+    def reset(id)
+      redis.hdel(key, id)
+    end
+
     def count_all(ids)
       redis.pipelined do
         ids.each do |id|
